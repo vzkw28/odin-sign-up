@@ -1,0 +1,187 @@
+@font-face {
+  font-family: 'Norse-Bold';
+  src: url('./fonts/Norse-Bold.otf') format('truetype');
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  display: flex;
+  min-height: 100vh;
+}
+
+.left {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+  width: 40%;
+}
+
+.leaf {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.logo {
+  height: 150px;
+  width: auto;
+}
+
+.right {
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+}
+
+.top {
+  height: 40%;
+  width: 100%;
+  padding: 150px 40px 40px 40px;
+}
+
+.form {
+  box-shadow: 0 0 40px 0 #E5E7EB;
+  height: 35%;
+  width: 100%;
+}
+
+.bottom {
+  height: 25%;
+  width: 100%;
+}
+
+.odin {
+  position: absolute;
+  color: white;
+  background: rgb(0, 0, 0, 0.5);
+  font-size: 100px;
+  width: 100%;
+  top: 20%;
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  font-family: 'Norse-Bold';
+  padding: 20px 0;
+}
+
+.photo-blurb {
+  position: absolute;
+  color: white;
+  bottom: 2%;
+  text-align: center;
+  width: 100%;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+.bottom {
+  display: flex;
+  flex-direction: column;
+  padding: 40px;
+  gap: 20px;
+}
+
+button {
+  width: 220px;
+  height: 50px;
+  border-radius: 8px;
+  color: white;
+  background-color: #596D48;
+  font-weight: 900;
+  font-size: 18px;
+  box-shadow: 2px 2px #E5E7EB;
+  border-style: none;
+  cursor: pointer;
+}
+
+.form {
+  padding: 30px 40px 40px;
+}
+
+.sign-up-form {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.form-row {
+  display: flex;
+  gap: 50px;
+}
+
+.form-group {
+  display: flex;
+  flex-direction: column;
+  width: 30%;
+}
+
+form {
+  margin-top: 20px;
+  font-size: 16px;
+}
+
+input {
+  margin-top: 6px;
+  height: 30px;
+  border-color: #E5E7EB;
+  border-radius: 5px;
+  border-style: solid;
+  padding: 10px;
+  font-size: 16px;
+  border-width: 1px;
+}
+
+p {
+  font-size: 18px;
+}
+
+#log-in {
+  text-decoration: none;
+  color: #596D48;
+  font-weight: 900;
+}
+
+input:focus {
+  border-color: rgb(74, 74, 255);
+  outline: none;
+  box-shadow: 2px 2px lightgrey;
+}
+
+input:not(:placeholder-shown):valid {
+  border-color:green;
+}
+
+input:not(:placeholder-shown):invalid {
+  border-color:red;
+}
+
+.photo-blurb p a {
+  color: white;
+}
+
+#password-check {
+  margin-top: 5px;
+  color: red;
+  font-style: italic;
+}
+
+.error {
+  border-color:red !important;
+  outline: none;
+}
+
+.match {
+  border-color:green !important;
+  outline: none;
+}
